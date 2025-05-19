@@ -1,0 +1,99 @@
+.active-button {
+    background-color: #555; /* Change this color to whatever you prefer */
+    color: white; /* Change text color if needed */
+}
+
+.headertext {
+    font-family: 'Share Tech Mono', sans-serif;
+    font-weight: 700 !important;
+    font-size: 38px !important;
+    letter-spacing: .1rem;
+}
+
+.headerbutton {
+    font-family: 'Share Tech Mono', sans-serif;
+    font-weight: 700 !important;
+    font-size: 30px !important;
+    letter-spacing: .1rem;
+}
+
+h1{
+    font-family: 'Alte Haas Grotesk', sans-serif;
+    font-weight: 700 !important;
+    font-size: 30px !important;
+    letter-spacing: .1rem;
+}
+
+h2 {
+    font-family: 'Alte Haas Grotesk', sans-serif;;
+    font-weight: 400 !important;
+    font-size: 22px !important;
+    letter-spacing: .1rem;
+}
+
+h3 {
+    font-family: 'Alte Haas Grotesk', sans-serif;;
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    letter-spacing: .1rem;
+}
+
+h4 {
+    font-family: 'Alte Haas Grotesk', sans-serif;
+    font-weight: 400 !important;
+    font-size: 12px !important;
+    letter-spacing: .1rem;
+}
+
+.navbar {
+    font-family: 'Alte Haas Grotesk', sans-serif;
+    font-weight: 400;
+    letter-spacing: .1rem;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #e31837 !important;
+    background: black;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+
+.navbar-toggler-border-color .navbar-toggler-icon-bg {
+    color: #e31837 !important;
+}
+
+.navbar-toggler-font-size {
+    font-size: 24px;
+}
+
+.navbar-toggler-border-color{
+    color: #e31837 !important;
+}
+
+.navbar-toggler-icon-bg {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Cpath stroke='rgba(255,255,255,.55)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M1 4h14M1 8h14M1 12h14'/%3E%3C/svg%3E");
+}
+
+.typewriter {
+    font-family: 'Share Tech Mono', sans-serif;
+    font-weight: 700;
+    font-size: 90;
+}
+
+.highlight {
+    margin: 0 -0.4em;
+    padding: 0.1em 0.4em;
+    border-radius: 0.8em 0.3em;
+    background: transparent;
+    background-image: linear-gradient(
+      to right,
+      rgba(255, 225, 0, 0.1),
+      rgba(255, 225, 0, 0.7) 4%,
+      rgba(255, 225, 0, 0.3)
+    );
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+  }

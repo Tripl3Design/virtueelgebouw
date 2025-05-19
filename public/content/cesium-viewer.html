@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Viewer</title>
+    <script src="https://cesium.com/downloads/cesiumjs/releases/1.125/Build/Cesium/Cesium.js"></script>
+    <link href="https://cesium.com/downloads/cesiumjs/releases/1.125/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="cesiumContainer"></div>
+    <script type="module">
+        Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI1N2JiYzYyMy00ZWVkLTQ0NjAtYTBjYy02ZTc2ZGM3ZmZhMjEiLCJpZCI6MjYzMDc4LCJpYXQiOjE3MzQ0MzU1NDR9.oLuQXjZgSIzLJ0wbwoU_LbwNNyWmoWDWguOjYiEPmBs';
+
+        async function initializeViewer() {
+            const viewer = new Cesium.Viewer('cesiumContainer', {
+                terrain: Cesium.Terrain.fromWorldTerrain(),
+                imageryProviderViewModels: [],  // Verwijdert basemaps zoals Bing en imagery
+                selectionIndicator: false,     // Verbergt de objectselectie indicator
+                navigationHelpButton: false,   // Verbergt de navigatiehulp knop
+                sceneModePicker: false,        // Verbergt de scene-mode (2D, 3D, Columbus view) knop
+                timeline: false,               // Verbergt de tijdlijn
+                fullscreenButton: false,       // Verbergt de fullscreen knop
+                homeButton: false,             // Verbergt de "home" knop
+                infoBox: false,                // Verbergt het infoBox
+                geocoder: false,               // Verbergt de geocoder (zoeken)
+                navigationInstructionsInitiallyVisible: false,  // Verbergt de navigatie-instructies
+                //clockViewModel: false,         // Verbergt de klok viewmodel (play/pause knoppen)
+                animation: false,              // Verbergt de animatie knop
+            });
+            
+            // Enable rendering the sky
+            viewer.scene.skyAtmosphere.show = true;
+
+            viewer.camera.setView({
+                destination: Cesium.Cartesian3.fromDegrees(5.56455, 52.04310, 60), // Jouw locatie met hoogte 150 meter
+                orientation: {
+                    heading: Cesium.Math.toRadians(230),  // Kijk in oostelijke richting (90 graden)
+                    pitch: Cesium.Math.toRadians(-20),  // Lichte neerwaartse helling (pitch)
+                    roll: 0,                            // Geen rotatie (roll)
+                }
+            });
+
+            viewer.camera.moveBackward(120);
+
+            // Configure Ambient Occlusion
+            if (Cesium.PostProcessStageLibrary.isAmbientOcclusionSupported(viewer.scene)) {
+                const ambientOcclusion = viewer.scene.postProcessStages.ambientOcclusion;
+                ambientOcclusion.enabled = true;
+                ambientOcclusion.uniforms.intensity = 2.0;
+                ambientOcclusion.uniforms.bias = 0.1;
+                ambientOcclusion.uniforms.lengthCap = 0.5;
+                ambientOcclusion.uniforms.directionCount = 16;
+                ambientOcclusion.uniforms.stepCount = 32;
+            }
+
+            try {
+                // 3D Tileset toevoegen (vervang door je eigen ID als je een ander tileset wilt gebruiken)
+                const googleTileset = await Cesium.Cesium3DTileset.fromIonAssetId(2275207);
+                viewer.scene.primitives.add(googleTileset);
+            } catch (error) {
+                console.error('Fout bij het laden van de tileset:', error);
+            }
+
+            const position = Cesium.Cartesian3.fromDegrees(5.56455, 52.04310, 50.5);
+            const heading = Cesium.Math.toRadians(96);
+            const pitch = Cesium.Math.toRadians(0);
+            const roll = Cesium.Math.toRadians(0);
+            const hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+            const orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+
+            viewer.entities.add({
+                name: "2023-074",
+                position: position,
+                orientation: orientation,
+                model: {
+                    uri: "https://tripledesign.nl/content/portfolio/ar-voor-gebouwen/2023-074.glb",
+                    scale: 1,
+                }
+            });
+        }
+
+        // De async functie aanroepen
+        initializeViewer();
+    </script>
+</body>
+
+</html>

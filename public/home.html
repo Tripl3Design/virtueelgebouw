@@ -1,0 +1,998 @@
+<script type="application/json" id="page-metadata">
+    {
+        "title": "Portfolio - TripleDesign",
+        "description": "Bekijk onze projecten en ontdek hoe TripleDesign innovatieve 3D-oplossingen toepast in diverse sectoren. Van 3D visualisaties tot virtual reality en interactieve installaties."
+    }
+</script>
+
+<div class="container mx-auto p-0">
+
+    <div class="row m-0 p-0">
+        <div style="height: auto; height: 200px;" class="col-lg-6 align-self-lg-center m-0 p-3">
+            <h1 class="headertext text-black text-decoration-none m-0 p-0">
+                <span class="typewrite" data-period="2000"
+                    data-type='["We staan te popelen om jouw project in onze 3D-showcase te laten schitteren!"]'
+                    data-highlight-words='["jouw project", "laten schitteren!"]'></span>
+            </h1>
+        </div>
+        <div class="col-lg-6 m-0 p-0">
+            <div class="card bg-transparent rounded-0 border border-0">
+                <img src="img/header/closeup-hand-holding-touching-screen-blank-screen-smartphone-removebg-preview.png"
+                    class="card-img" alt="mobiele telefoon">
+                <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                    <model-viewer style="border: 2px solid black; height: 85%; width: 26%;" loading="eager"
+                        camera-controls disable-pan disable-zoom touch-action="pan-y" auto-rotate alt="bril"
+                        src="gltf/portfolio/portfolio.gltf" shadow-intensity="1" camera-controls
+                        touch-action="pan-y"></model-viewer>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row bg-black text-light shadow mx-3 mt-0 mb-3 p-3">
+        <div class="row m-0 p-3">
+            <h1 class="mb-4">Een greep uit onze projecten</h1>
+            <h2>Bij <strong>TripleDesign</strong> werken we met plezier en toewijding aan diverse projecten binnen
+                verschillende categorieën. Hieronder vindt u een selectie van ons werk:</h2>
+        </div>
+        <div class="row m-0 p-3">
+            <div class="col-sm-6 col-lg-4 mb-3">
+                <h2>3D visuals</h2>
+                <h3>Onze 3D visualisaties helpen ideeën omzetten in realistische beelden. Of het nu gaat om
+                    architectuur, producten of artistieke concepten, we streven naar visuals die helder en overtuigend
+                    zijn.</h3>
+            </div>
+            <div class="col-sm-6 col-lg-4 mb-3">
+                <h2>3D productconfiguratoren</h2>
+                <h3>We ontwikkelen 3D productconfiguratoren die gebruikers de mogelijkheid bieden om producten naar wens
+                    aan te passen. Deze tools maken het eenvoudig om verschillende opties en varianten direct te zien.
+                </h3>
+            </div>
+            <div class="col-sm-6 col-lg-4 mb-3">
+                <h2>Websites met 3D integratie</h2>
+                <h3>Onze websites met 3D-elementen bieden een interactieve en boeiende ervaring. Van
+                    productdemonstraties tot andere interactieve onderdelen, wij maken van elke website een unieke
+                    beleving.</h3>
+            </div>
+            <div class="col-sm-6 col-lg-4 mb-3">
+                <h2>Virtual reality</h2>
+                <h3>We creëren virtual reality-ervaringen voor verschillende toepassingen, zoals training, simulatie en
+                    entertainment. Onze VR-projecten bieden gebruikers een meeslepende ervaring.</h3>
+            </div>
+            <div class="col-sm-6 col-lg-4 mb-3">
+                <h2>Interactieve installaties</h2>
+                <h3>Onze interactieve installaties zijn ontworpen om te verrassen en te boeien. Ze zijn ideaal voor
+                    tentoonstellingen, evenementen en marketingcampagnes en zorgen voor een interactieve ervaring.</h3>
+            </div>
+
+            <div class="row row-cols-auto">
+                <div class="col-12 mb-3">
+                    <h2>Filter categorieën:</h2>
+                </div>
+
+                <div class="col mb-3">
+                    <button class="btn btn-light rounded-0 filter-button fw-bold fs-6 text-uppercase"
+                        data-filter="all">alle projecten</button>
+                </div>
+
+                <div class="col mb-3">
+                    <button class="btn btn-danger rounded-0 filter-button fw-bold fs-6 text-uppercase"
+                        data-filter="tripletise">TripleTise</button>
+                </div>
+                <div class="col mb-3">
+                    <button class="btn btn-success rounded-0 filter-button fw-bold fs-6 text-uppercase"
+                        data-filter="visuals">visuals</button>
+                </div>
+                <div class="col mb-3">
+                    <button class="btn btn-primary rounded-0 filter-button fw-bold fs-6 text-uppercase"
+                        data-filter="virtuals">virtual reality</button>
+                </div>
+                <div class="col mb-3">
+                    <button class="btn btn-warning rounded-0 filter-button fw-bold fs-6 text-uppercase"
+                        data-filter="websites">websites</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mx-auto pb-1 pb-md-3 p-0">
+
+    <div class="row m-0 p-0">
+
+        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 p-3   pb-1 pb-md-3 p-0    case-item"
+            data-category="tripletise">
+            <div class="card border-0 h-100 shadow z-0">
+                <div style="width: 110px;"
+                    class="bg-danger text-white position-absolute top-0 end-0 shadow z-1  me-3 text-center d-flex align-items-center justify-content-center m-0 py-2">
+                    <h4 class="m-0">tripletise</h4>
+                </div>
+                <img src="content/portfolio/pastoe/amsterdammer.jpg" class="img-fluid rounded-0" alt="amsterdammer">
+                <div class="card-body bg-black text-light">
+                    <button class="btn btn-light border-0 rounded-0" type="button"
+                        onclick="tripletiseModal('pastoe-amsterdammer.web.app');"><i class="bi-box-arrow-up-right"></i>
+                        demo</button>
+                    <h2 class="m-0 p-0 py-2">Pastoe A'dammer</h2>
+                    <h3>De drie verschillende typen zijn allemaal voorzien van de herkenbare geribbelde roldeur. De
+                        A'dammer is daarmee een Dutch Design klassieker geworden.</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 m-0 p-3 pb-1 pb-md-3 p-0 case-item" data-category="visuals">
+            <div class="card border-0 h-100 shadow">
+                <div id="carouselMegaplexWoningen" class="carousel slide z-0" data-bs-ride="carousel">
+                    <div style="width: 110px;"
+                        class="bg-success text-white position-absolute top-0 end-0 shadow z-1  me-3 text-center d-flex align-items-center justify-content-center m-0 py-2">
+                        <h4 class="m-0">visuals</h4>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="content/portfolio/megaplex-woningen/slaapkamer.jpg" class="d-block w-100"
+                                alt="Slaapkamer">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="content/portfolio/megaplex-woningen/verjaardag.jpg" class="d-block w-100"
+                                alt="Verjaardag">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="content/portfolio/megaplex-woningen/buitenkant.jpg" class="d-block w-100"
+                                alt="Buitenkant">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="content/portfolio/megaplex-woningen/truck.jpg" class="d-block w-100" alt="Truck">
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body bg-black text-light p-3 m-0">
+                    <div class="btn-group justify-content-end m-0 p-0" role="group" aria-label="Basic outlined example">
+                        <button class="btn btn-light border-0 rounded-0" type="button"
+                            data-bs-target="#carouselMegaplexWoningen" data-bs-slide-to="0" aria-current="true"
+                            aria-label="Slide 1"><i class="bi-image"></i> 1</button>
+                        <button class="btn btn-light border-0 rounded-0" type="button"
+                            data-bs-target="#carouselMegaplexWoningen" data-bs-slide-to="1" aria-label="Slide 2"><i
+                                class="bi-image"></i> 2</button>
+                        <button class="btn btn-light border-0 rounded-0" type="button"
+                            data-bs-target="#carouselMegaplexWoningen" data-bs-slide-to="2" aria-label="Slide 3"><i
+                                class="bi-image"></i> 3</button>
+                        <button class="btn btn-light border-0 rounded-0" type="button"
+                            data-bs-target="#carouselMegaplexWoningen" data-bs-slide-to="3" aria-label="Slide 4"><i
+                                class="bi-image"></i> 4</button>
+                    </div>
+                    <button class="btn btn-light border-0 rounded-0 m-0 ms-3" type="button"
+                        onclick="tripletiseModal('tripledesign.nl/content/portfolio/megaplex-woningen/pano/index.html');"><i
+                            class="bi-box-arrow-up-right"></i> 360&deg;</button>
+                    <h2 class="m-0 p-0 py-2">Megaplex Woningen</h2>
+                    <h3><a href="https://www.megaplexwoningen.nl/projecten" class="text-light">Megaplex Woningen</a> is
+                        gespecialiseerd in het creëren van innovatieve en duurzame modulaire woonoplossingen. Hun
+                        portfolio omvat gestapelde woningen, tijdelijke huisvesting en vrijstaande tiny houses. Elk type
+                        is ontworpen om efficiëntie, duurzaamheid en comfort te maximaliseren, waardoor ze geschikt zijn
+                        voor verschillende toepassingen, van stedelijk wonen tot tijdelijke huisvesting en recreatief
+                        gebruik.</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 m-0 p-3 pb-1 pb-md-3 p-0 case-item" data-category="virtuals">
+            <div class="card border-0 h-100 shadow">
+                <div id="carouselVolkerWessels" class="carousel slide z-0" data-bs-ride="carousel">
+                    <div style="width: 110px;"
+                        class="bg-primary text-white position-absolute top-0 end-0 shadow z-1  me-3 text-center d-flex align-items-center justify-content-center m-0 py-2">
+                        <h4 class="m-0">virtual reality</h4>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="content/portfolio/volkerwessels/volkerwessels-wooniversum.jpg"
+                                class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="content/portfolio/volkerwessels/interactieve-tafel.jpg" class="d-block w-100"
+                                alt="...">
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body bg-black text-light p-3 m-0">
+                    <div class="btn-group justify-content-end m-0 p-0" role="group" aria-label="Basic outlined example">
+                        <button class="btn btn-light border-0 rounded-0" type="button"
+                            data-bs-target="#carouselVolkerWessels" data-bs-slide-to="0" aria-current="true"
+                            aria-label="Slide 1"><i class="bi-image"></i> 1</button>
+                        <button class="btn btn-light border-0 rounded-0" type="button"
+                            data-bs-target="#carouselVolkerWessels" data-bs-slide-to="1" aria-label="Slide 2"><i
+                                class="bi-image"></i> 2</button>
+                    </div>
+                    <button class="btn btn-light border-0 rounded-0 m-0 ms-3" type="button"
+                        onclick="portfolioVideo('https://tripledesign.nl/content/portfolio/volkerwessels/wooniversum.mp4')"><i
+                            class="bi-box-arrow-up-right"></i> video</button>
+                    <h2 class="m-0 p-0 py-2">VolkerWessels Wooniversum</h2>
+                    <h3>Het Wooniversum bood een interactieve ervaring waarin bezoekers de mogelijkheid hadden om
+                        virtueel door verschillende woningontwerpen te wandelen...</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 my-0 p-3    pb-1 pb-md-3 p-0    case-item"
+            data-category="websites">
+            <div class="card border-0 h-100 shadow z-0">
+                <div style="width: 110px;"
+                    class="bg-warning text-black position-absolute top-0 end-0 shadow z-1  me-3 text-center d-flex align-items-center justify-content-center m-0 py-2">
+                    <h4 class="m-0">websites</h4>
+                </div>
+                <img src="content/portfolio/arnhems-persagentschap/arnhems-persagentschap.jpg"
+                    class="img-fluid rounded-0" alt="arnhems-persagentschap">
+                <div class="card-body bg-black text-light">
+                    <h2 class="m-0 p-0 py-2">ArnhemsPersagentschap</h2>
+                    <h3>Voor het <a href="https://arnhemspersagentschap.nl" class="text-light">Arnhems
+                            Persagentschap</a> hebben we de website mogen verzorgen.</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 my-0 p-3    pb-1 pb-md-3 p-0    case-item"
+            data-category="tripletise">
+            <div class="card border-0 h-100 shadow z-0">
+                <div style="width: 110px;"
+                    class="bg-danger text-white position-absolute top-0 end-0 shadow z-1  me-3 text-center d-flex align-items-center justify-content-center m-0 py-2">
+                    <h4 class="m-0">tripletise</h4>
+                </div>
+                <img src="content/portfolio/pastoe/vision-cabinets.jpg" class="img-fluid rounded-0" alt="frame">
+                <div class="card-body bg-black text-light">
+                    <button class="btn btn-light border-0 rounded-0" type="button"
+                        onclick="tripletiseModal('pastoe-vision-cabinets.web.app');"><i
+                            class="bi-box-arrow-up-right"></i>
+                        demo</button>
+                    <h2 class="m-0 p-0 py-2">Pastoe Vision Cabinets</h2>
+                    <h3>Vision cabinets</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 m-0 p-3    pb-1 pb-md-3 p-0    case-item"
+            data-category="visuals">
+            <div class="card d-flex border-0 h-100 shadow">
+                <div id="carouselGerardDoustraat" class="carousel slide z-0" data-bs-ride="carousel">
+                    <div style="width: 110px;"
+                        class="bg-success text-white position-absolute top-0 end-0 shadow z-1  me-3 text-center d-flex align-items-center justify-content-center m-0 py-2">
+                        <h4 class="m-0">visuals</h4>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="content/portfolio/gerard-doustraat/gerard-doustraat.jpg" class="d-block w-100"
+                                alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="content/portfolio/gerard-doustraat/gerard-doustraat-plattegrond-1.jpg"
+                                class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="content/portfolio/gerard-doustraat/gerard-doustraat-plattegrond-2.jpg"
+                                class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body bg-black text-light p-3 m-0">
+                    <div class="btn-group justify-content-end m-0 p-0" role="group" aria-label="Basic outlined example">
+                        <button class="btn btn-light border-0 rounded-0" type="button"
+                            data-bs-target="#carouselGerardDoustraat" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"><i class="bi-image"></i> 1</button>
+                        <button class="btn btn-light border-0 rounded-0" type="button"
+                            data-bs-target="#carouselGerardDoustraat" data-bs-slide-to="1" aria-label="Slide 2"><i
+                                class="bi-image"></i> 2</button>
+                        <button class="btn btn-light border-0 rounded-0" type="button"
+                            data-bs-target="#carouselGerardDoustraat" data-bs-slide-to="2" aria-label="Slide 3"><i
+                                class="bi-image"></i> 3</button>
+                    </div>
+                    <h2 class="m-0 p-0 py-2">Gerard Doustraat Veenendaal</h2>
+                    <h3>Voor <a href="https://www.studiopothoff.nl" class="text-light">Studio Pothoff</a> hebben we
+                        een
+                        aantal visuals gemaakt van de nieuwbouw 3 woningen aan de Gerard Doustraat in Veenendaal.
+                    </h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 my-0 p-3    pb-1 pb-md-3 p-0    case-item"
+            data-category="tripletise">
+            <div class="card border-0 h-100 shadow z-0">
+                <div style="width: 110px;"
+                    class="bg-danger text-white position-absolute top-0 end-0 shadow z-1  me-3 text-center d-flex align-items-center justify-content-center m-0 py-2">
+                    <h4 class="m-0">tripletise</h4>
+                </div>
+                <img src="content/portfolio/pastoe/wire.jpg" class="img-fluid rounded-0" alt="wire">
+                <div class="card-body bg-black text-light">
+                    <button class="btn btn-light border-0 rounded-0" type="button"
+                        onclick="tripletiseModal('pastoe-wire.web.app');"><i class="bi-box-arrow-up-right"></i>
+                        demo</button>
+                    <h2 class="m-0 p-0 py-2">Pastoe Wire</h2>
+                    <h3>Verkrijgbaar als kruk, keukenkruk, barkruk en loungestoel, met of zonder kussen. Met dit
+                        meubelstuk kun je alle kanten op.</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 m-0 p-3    pb-1 pb-md-3 p-0    case-item"
+            data-category="tripletise">
+            <div class="card border-0 h-100 shadow z-0">
+                <div style="width: 110px;"
+                    class="bg-danger text-white position-absolute top-0 end-0 shadow z-1  me-3 text-center d-flex align-items-center justify-content-center m-0 py-2">
+                    <h4 class="m-0">tripletise</h4>
+                </div>
+                <img src="content/portfolio/arco/base.jpg" class="img-fluid rounded-0" alt="base">
+                <div class="card-body bg-black text-light">
+                    <button class="btn btn-light border-0 rounded-0" type="button"
+                        onclick="tripletiseModal('arco-base.web.app');"><i class="bi-box-arrow-up-right"></i>
+                        demo</button>
+                    <h2 class="m-0 p-0 py-2">Arco Base</h2>
+                    <h3>De Base is een robuuste tafel van Arco op een betonnen onderstel. De afstand tussen de poten
+                        is
+                        zelf te kiezen en type 2 is uit te breiden tot 5,6 meter.</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 m-0 p-3    pb-1 pb-md-3 p-0    case-item"
+            data-category="websites">
+            <div class="card border-0 h-100 shadow z-0">
+                <div style="width: 110px;"
+                    class="bg-warning text-black position-absolute top-0 end-0 shadow z-1  me-3 text-center d-flex align-items-center justify-content-center m-0 py-2">
+                    <h4 class="m-0">websites</h4>
+                </div>
+                <div id="carouselDeJuffer" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="ratio ratio-1x1">
+                                <img src="content/portfolio/de-juffer/a_de_Juffer.jpg"
+                                    class="d-block w-100 object-fit-contain" alt="...">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="ratio ratio-1x1">
+                                <img src="content/portfolio/de-juffer/1_de_juffer.jpg"
+                                    class="d-block w-100 object-fit-contain" alt="...">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="ratio ratio-1x1">
+                                <img src="content/portfolio/de-juffer/2_de_juffer.jpg"
+                                    class="d-block w-100 object-fit-contain" alt="...">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="ratio ratio-1x1">
+                                <img src="content/portfolio/de-juffer/3_de_juffer.jpg"
+                                    class="d-block w-100 object-fit-contain" alt="...">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="ratio ratio-1x1">
+                                <img src="content/portfolio/de-juffer/4_de_juffer.jpg"
+                                    class="d-block w-100 object-fit-contain" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body bg-black text-light p-3 m-0">
+                        <div class="btn-group justify-content-end m-0 p-0" role="group"
+                            aria-label="Basic outlined example">
+                            <button class="btn btn-light border-0 rounded-0" type="button"
+                                data-bs-target="#carouselDeJuffer" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1"><i class="bi-image"></i> 1</button>
+                            <button class="btn btn-light border-0 rounded-0" type="button"
+                                data-bs-target="#carouselDeJuffer" data-bs-slide-to="1" aria-label="Slide 2"><i
+                                    class="bi-image"></i> 2</button>
+                            <button class="btn btn-light border-0 rounded-0" type="button"
+                                data-bs-target="#carouselDeJuffer" data-bs-slide-to="2" aria-label="Slide 3"><i
+                                    class="bi-image"></i> 3</button>
+                            <button class="btn btn-light border-0 rounded-0" type="button"
+                                data-bs-target="#carouselDeJuffer" data-bs-slide-to="3" aria-label="Slide 4"><i
+                                    class="bi-image"></i> 4</button>
+                            <button class="btn btn-light border-0 rounded-0" type="button"
+                                data-bs-target="#carouselDeJuffer" data-bs-slide-to="4" aria-label="Slide 5"><i
+                                    class="bi-image"></i> 5</button>
+                        </div>
+                        <h2 class="m-0 p-0 py-2">De Juffer</h2>
+                        <h3>De juffer is een stoel voor juffen en meesters van groep 1 en 2. Wij hebben een speelse
+                            website
+                            gemaakt met de stoel als 3d render en de omgeving als lijnenspel. Bestaande foto's waar
+                            de
+                            Juffer in gebruik was, hebben we als onderlegger gebruikt. De kinderen zijn door de
+                            lijntekening
+                            onderherkenbaar gebleven.</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 m-0 p-3    pb-1 pb-md-3 p-0    case-item"
+            data-category="virtuals">
+            <div class="card border-0 h-100 shadow">
+                <div style="width: 110px;"
+                    class="bg-primary text-white position-absolute top-0 end-0 shadow z-1  me-3 text-center d-flex align-items-center justify-content-center m-0 py-2">
+                    <h4 class="m-0">virtual reality</h4>
+                </div>
+                <img src="content/portfolio/daydream/google-daydream.jpg" class="d-block w-100" alt="...">
+                <div class="card-body bg-black text-light">
+                    <button class="btn btn-light border-0 rounded-0 m-0" type="button"
+                        onclick="portfolioVideo('https://tripledesign.nl/content/portfolio/daydream/google-daydream.mp4')"><i
+                            class="bi-box-arrow-up-right"></i> video</button>
+                    <h2 class="m-0 p-0 py-2">Google Daydream VR</h2>
+                    <h3>Google Daydream was een VR-platform gelanceerd in 2016, ontworpen voor hoogwaardige
+                        VR-ervaringen op
+                        compatibele Android-smartphones. Het omvatte de Daydream View-headset en een draadloze
+                        controller,
+                        en
+                        ondersteunde een breed scala aan VR-apps en -games, evenals integratie met Google-diensten.
+                        Wij
+                        hebben
+                        voor dit apparaat 360&deg; visuals gemaakt.</h3>
+                </div>
+            </div>
+        </div>
+        <!--
+        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 my-0 p-3    pb-1 pb-md-3 p-0    case-item"
+            data-category="tripletise">
+            <div class="card border-0 h-100 shadow z-0">
+              <div style="width: 110px;"
+                    class="bg-danger text-white position-absolute top-0 end-0 shadow z-1  me-3 text-center d-flex align-items-center justify-content-center m-0 py-2">
+                    <h4 class="m-0">tripletise</h4>
+                </div>
+                <img src="content/portfolio/lensvelt/maartenBaasChair.jpg" class="img-fluid rounded-0" alt="frame">
+                <div class="card-body bg-black text-light">
+                    <button class="btn btn-light border-0 rounded-0" type="button"
+                        onclick="tripletiseModal('lensvelt-demo.web.app');"><i class="bi-box-arrow-up-right"></i>
+                        demo</button>
+                    <h2 class="m-0 p-0 py-2">Lensvelt Maarten Baas</h2>
+                    <h3>De Lensvelt Maarten Baas stoelen bestaan uit een serie van 8 verschillende stoelen met
+                        verschillende ruggetje waardoor iedere stoel uniek lijkt!</h3>
+                </div>
+            </div>
+        </div>
+-->
+        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 m-0 p-3    pb-1 pb-md-3 p-0    case-item"
+            data-category="visuals">
+            <div class="card border-0 h-100 shadow">
+                <div id="carouselPorscheRotterdam" class="carousel slide z-0" data-bs-ride="carousel">
+                    <div style="width: 110px;"
+                        class="bg-success text-white position-absolute top-0 end-0 shadow z-1  me-3 text-center d-flex align-items-center justify-content-center m-0 py-2">
+                        <h4 class="m-0">visuals</h4>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="content/portfolio/porsche-rotterdam/porsche-1.jpg" class="d-block w-100"
+                                alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="content/portfolio/porsche-rotterdam/porsche-2.jpg" class="d-block w-100"
+                                alt="...">
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body bg-black text-light p-3 m-0">
+                    <div class="btn-group justify-content-end m-0 p-0" role="group" aria-label="Basic outlined example">
+                        <button class="btn btn-light border-0 rounded-0" type="button"
+                            data-bs-target="#carouselPorscheRotterdam" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"><i class="bi-image"></i> 1</button>
+                        <button class="btn btn-light border-0 rounded-0" type="button"
+                            data-bs-target="#carouselPorscheRotterdam" data-bs-slide-to="1" aria-label="Slide 2"><i
+                                class="bi-image"></i> 2</button>
+                    </div>
+                    <h2 class="m-0 p-0 py-2">Porsche Centrum Rotterdam</h2>
+                    <h3>In samenwerking met <a href="guidobakker.nl" class="text-light">Architektenburo Guido
+                            Bakker</a>
+                        hebben we visuals gemaakt voor Porsche Centrum Rotterdam, waar de esthetiek van luxe auto's
+                        naadloos samenkomt.</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 m-0 p-3    pb-1 pb-md-3 p-0    case-item"
+            data-category="virtuals">
+            <div class="card border-0 h-100 shadow z-0">
+                <div style="width: 110px;"
+                    class="bg-primary text-white position-absolute top-0 end-0 shadow z-1  me-3 text-center d-flex align-items-center justify-content-center m-0 py-2">
+                    <h4 class="m-0">virtual reality</h4>
+                </div>
+                <img src="content/portfolio/calvinklein/window.jpg" class="img-fluid rounded-0" alt="base">
+                <div class="card-body bg-black text-light">
+                    <h2 class="m-0 p-0 py-2">Calvin Klein</h2>
+                    <h3>Een unieke Virtual Reality-ervaring voor Calvin Klein Jeans, gecreëerd met AltSpaceVR. In
+                        een
+                        tijd waarin persoonlijke ontmoetingen beperkt waren, hebben we een innovatieve oplossing
+                        ontwikkeld om mensen samen te brengen en een gedenkwaardige ervaring te bieden. Stap binnen
+                        in
+                        een virtuele wereld waar je kunt socializen, verkennen en genieten van de iconische stijl
+                        van
+                        Calvin Klein, allemaal vanuit het comfort van je eigen huis.</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 m-0 p-3    pb-1 pb-md-3 p-0    case-item"
+            data-category="visuals">
+            <div class="card border-0 h-100 shadow">
+                <div id="carouselBoomgaardTiel" class="carousel slide z-0" data-bs-ride="carousel">
+                    <div style="width: 110px;"
+                        class="bg-success text-white position-absolute top-0 end-0 shadow z-1  me-3 text-center d-flex align-items-center justify-content-center m-0 py-2">
+                        <h4 class="m-0">visuals</h4>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="content/portfolio/boomgaard-Tiel/vogelvlucht.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="content/portfolio/boomgaard-Tiel/blokA.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="content/portfolio/boomgaard-Tiel/entreeHofje.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="content/portfolio/boomgaard-Tiel/hofje.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="content/portfolio/boomgaard-Tiel/onderdoorgang.jpg" class="d-block w-100"
+                                alt="...">
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body bg-black text-light p-3 m-0">
+                    <div class="btn-group justify-content-end m-0 p-0" role="group" aria-label="Basic outlined example">
+                        <button class="btn btn-light border-0 rounded-0" type="button"
+                            data-bs-target="#carouselBoomgaardTiel" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"><i class="bi-image"></i> 1</button>
+                        <button class="btn btn-light border-0 rounded-0" type="button"
+                            data-bs-target="#carouselBoomgaardTiel" data-bs-slide-to="1" aria-label="Slide 2"><i
+                                class="bi-image"></i> 2</button>
+                        <button class="btn btn-light border-0 rounded-0" type="button"
+                            data-bs-target="#carouselBoomgaardTiel" data-bs-slide-to="2" aria-label="Slide 3"><i
+                                class="bi-image"></i> 3</button>
+                        <button class="btn btn-light border-0 rounded-0" type="button"
+                            data-bs-target="#carouselBoomgaardTiel" data-bs-slide-to="3" aria-label="Slide 4"><i
+                                class="bi-image"></i> 4</button>
+                        <button class="btn btn-light border-0 rounded-0" type="button"
+                            data-bs-target="#carouselBoomgaardTiel" data-bs-slide-to="4" aria-label="Slide 5"><i
+                                class="bi-image"></i> 5</button>
+                    </div>
+                    <h2 class="m-0 p-0 py-2">Woningbouw Boomgaard Tiel</h2>
+                    <h3>Voor het project 'De Boomgaard' in Tiel hebben we prachtige visuals gemaakt van 31
+                        grondgebonden
+                        woningen. Dit project, gerealiseerd in samenwerking met <a
+                            href="https://vanleeuwenarchitecten.nl" class="text-light">Van Leeuwen architecten</a>,
+                        combineert modern woongenot met een groene, boomrijke omgeving, wat resulteert in een ideale
+                        leefomgeving.</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 my-0 p-3    pb-1 pb-md-3 p-0    case-item"
+            data-category="tripletise">
+            <div class="card border-0 h-100 shadow z-0">
+                <div style="width: 110px;"
+                    class="bg-danger text-white position-absolute top-0 end-0 shadow z-1  me-3 text-center d-flex align-items-center justify-content-center m-0 py-2">
+                    <h4 class="m-0">tripletise</h4>
+                </div>
+                <img src="content/portfolio/pastoe/frame.jpg" class="img-fluid rounded-0" alt="frame">
+                <div class="card-body bg-black text-light">
+                    <button class="btn btn-light border-0 rounded-0" type="button"
+                        onclick="tripletiseModal('pastoe-frame.web.app');"><i class="bi-box-arrow-up-right"></i>
+                        demo</button>
+                    <h2 class="m-0 p-0 py-2">Pastoe Frame</h2>
+                    <h3>Gewoon een heel strak dressoir. Het fineer loopt mooi door over alle fronten. Ook in de
+                        configurator!</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 my-0 p-3    pb-1 pb-md-3 p-0    case-item"
+            data-category="tripletise">
+            <div class="card border-0 h-100 shadow z-0">
+                <div style="width: 110px;"
+                    class="bg-danger text-white position-absolute top-0 end-0 shadow z-1  me-3 text-center d-flex align-items-center justify-content-center m-0 py-2">
+                    <h4 class="m-0">tripletise</h4>
+                </div>
+                <img src="content/portfolio/gelderland/vandoesburg.jpg" class="img-fluid rounded-0" alt="van doesburg">
+                <div class="card-body bg-black text-light">
+                    <button class="btn btn-light border-0 rounded-0" type="button"
+                        onclick="tripletiseModal('gelderland-vandoesburg.web.app');"><i
+                            class="bi-box-arrow-up-right"></i>
+                        demo</button>
+                    <h2 class="m-0 p-0 py-2">Gelderland Van Doesburg</h2>
+                    <h3>De 'Van Doesburg' modulaire <a
+                            onclick="tripletiseModal('gelderland-vandoesburg.web.app?newtab&prices&lang=en&region=europe');">bank</a>
+                        van <a href="https://gelderlanddesign.com/products/10000-van-doesburg"
+                            class="text-light">Gelderland</a>.</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 my-0 p-3    pb-1 pb-md-3 p-0    case-item"
+            data-category="tripletise">
+            <div class="card border-0 h-100 shadow z-0">
+                <div style="width: 110px;"
+                    class="bg-danger text-white position-absolute top-0 end-0 shadow z-1  me-3 text-center d-flex align-items-center justify-content-center m-0 py-2">
+                    <h4 class="m-0">tripletise</h4>
+                </div>
+                <img src="content/portfolio/vanwoerdenwonen/evan.jpg" class="img-fluid rounded-0" alt="evan">
+                <div class="card-body bg-black text-light">
+                    <button class="btn btn-light border-0 rounded-0" type="button"
+                        onclick="tripletiseModal('vanwoerdenwonen-levante.web.app');"><i
+                            class="bi-box-arrow-up-right"></i>
+                        demo</button>
+                    <h2 class="m-0 p-0 py-2">Bank Evan</h2>
+                    <h3>Dankzij de ronde organische vormen is Evan een stijlvolle en trendy bank. Zijn zachte stof zorgt
+                        voor een echt thuisgevoel. Configurator voor woonwinkel <a href="https://www.vanwoerdenwonen.nl"
+                            class="text-light">Van Woerden Wonen</a></h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 my-0 p-3    pb-1 pb-md-3 p-0    case-item"
+        data-category="tripletise">
+        <div class="card border-0 h-100 shadow z-0">
+            <div style="width: 110px;"
+                class="bg-danger text-white position-absolute top-0 end-0 shadow z-1  me-3 text-center d-flex align-items-center justify-content-center m-0 py-2">
+                <h4 class="m-0">tripletise</h4>
+            </div>
+            <img src="content/portfolio/tv-wand/tv-wand.png" class="img-fluid rounded-0" alt="tv-wand">
+            <div class="card-body bg-black text-light">
+                <button class="btn btn-light border-0 rounded-0" type="button"
+                    onclick="tripletiseModal('relaxury-tv-wand.web.app');"><i
+                        class="bi-box-arrow-up-right"></i>
+                    demo</button>
+                <h2 class="m-0 p-0 py-2">TV Wand</h2>
+                <h3>Een tv-wand of cinewall is een uniek maatwerk meubel dat u helemaal naar wens samenstelt. De wanden worden vaak gemaakt om een televisie, sfeerhaard en soundbar in te verwerken.
+                    Configurator voor  <a href="https://tvwand.nl/" class="text-light">tvwand.nl</a>.
+                </h3>
+            </div>
+        </div>
+    </div>
+
+
+        <!--
+        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 my-0 p-3 pb-1 pb-md-3 p-0 case-item" data-category="virtuals">
+            <div class="card border-0 h-100 shadow z-0 rounded-0">
+                <div style="width: 110px;"
+                    class="bg-primary text-white position-absolute top-0 end-0 shadow z-1 me-3 text-center d-flex align-items-center justify-content-center m-0 py-2">
+                    <h4 class="m-0">virtual reality</h4>
+                </div>
+                <div id="cesiumContainer" style="width: 100%; aspect-ratio: 1 / 1; display: none;"
+                    class="position-absolute top-0 start-0">
+                </div>
+                <img src="content/portfolio/ar-voor-gebouwen/2023-074.png" class="img-fluid rounded-0" alt="ar-gebouw">
+                <div class="card-body bg-black text-light">
+
+                    <button id="arButton" class="btn btn-light border-0 rounded-0 me-3" type="button"
+                        onclick="startAR()">
+                        <i class="bi-pin-map"></i> bekijk in AR
+                    </button>
+                    <button class="btn btn-light border-0 rounded-0" type="button" onclick="portfolioCesium()">
+                        <i class="bi bi-map"></i> bekijk op Google Earth
+                    </button>
+                    <h2 class="m-0 p-0 py-2">AR voor gebouwen</h2>
+                    <h3>We onderzoeken de mogelijkheden om gebouwen in Augmented Reality (AR) weer te geven. Het doel?
+                        Gebouwen op de juiste locatie virtueel plaatsen, zodat je ze eenvoudig met je telefoon kunt
+                        bekijken en ervaren.</h3>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const targetLatitude = 52.043026037779555;
+            const targetLongitude = 5.56421522902635;
+            const accuracyThreshold = 170;
+
+            function startAR() {
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(position => {
+                        const userLat = position.coords.latitude;
+                        const userLng = position.coords.longitude;
+                        const distance = getDistanceFromLatLonInMeters(userLat, userLng, targetLatitude, targetLongitude);
+
+                        if (distance < accuracyThreshold) {
+                            alert("Je bent op de juiste locatie! AR wordt geladen.");
+
+                            const isIOS = /iPhone|iPad|iPod/.test(navigator.userAgent);
+                            const isAndroid = /Android/.test(navigator.userAgent);
+
+                            if (isIOS) {
+                                window.location.href = "https://tripledesign.nl/content/portfolio/ar-voor-gebouwen/2023-074.usdz";
+                            } else if (isAndroid) {
+                                window.location.href = "intent://arvr.google.com/scene-viewer/1.0?file=https://tripledesign.nl/content/portfolio/ar-voor-gebouwen/2023-074.glb#Intent;scheme=https;package=com.google.ar.core;end;";
+                            } else {
+                                alert("AR wordt niet ondersteund op jouw apparaat.");
+                            }
+                        } else {
+                            alert("Je moet dichter bij de locatie zijn om AR te bekijken.");
+                        }
+                    }, error => {
+                        console.error("Geolocatie fout:", error);
+                        alert("Kan je locatie niet ophalen. Controleer je GPS-instellingen.");
+                    });
+                } else {
+                    alert("Je browser ondersteunt geen geolocatie.");
+                }
+            }
+
+            function getDistanceFromLatLonInMeters(lat1, lon1, lat2, lon2) {
+                const R = 6371000; // Straal van de aarde in meter
+                const dLat = (lat2 - lat1) * (Math.PI / 180);
+                const dLon = (lon2 - lon1) * (Math.PI / 180);
+                const a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+                    Math.cos(lat1 * (Math.PI / 180)) * Math.cos(lat2 * (Math.PI / 180)) *
+                    Math.sin(dLon / 2) * Math.sin(dLon / 2);
+                const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+                return R * c;
+            }
+
+            // Locatie controleren bij laden
+            console.log('onload');
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(position => {
+                    const userLat = position.coords.latitude;
+                    const userLng = position.coords.longitude;
+                    const distance = getDistanceFromLatLonInMeters(userLat, userLng, targetLatitude, targetLongitude);
+
+                    if (distance < accuracyThreshold) {
+                        document.getElementById("arButton").style.display = "inline-block";
+                    }
+                }, error => {
+                    console.error("Geolocatie fout:", error);
+                    alert("Kan je locatie niet ophalen. Controleer je GPS-instellingen.");
+                });
+            }
+        </script>
+
+    </div>
+</div>
+
+<script type="module">
+    Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI1N2JiYzYyMy00ZWVkLTQ0NjAtYTBjYy02ZTc2ZGM3ZmZhMjEiLCJpZCI6MjYzMDc4LCJpYXQiOjE3MzQ0MzU1NDR9.oLuQXjZgSIzLJ0wbwoU_LbwNNyWmoWDWguOjYiEPmBs';
+
+    async function initializeViewer() {
+        const viewer = new Cesium.Viewer('cesiumContainer', {
+            terrain: Cesium.Terrain.fromWorldTerrain(),
+            imageryProviderViewModels: [],  // Verwijdert basemaps zoals Bing en imagery
+            selectionIndicator: false,     // Verbergt de objectselectie indicator
+            navigationHelpButton: false,   // Verbergt de navigatiehulp knop
+            sceneModePicker: false,        // Verbergt de scene-mode (2D, 3D, Columbus view) knop
+            timeline: false,               // Verbergt de tijdlijn
+            fullscreenButton: false,       // Verbergt de fullscreen knop
+            homeButton: false,             // Verbergt de "home" knop
+            infoBox: false,                // Verbergt het infoBox
+            geocoder: false,               // Verbergt de geocoder (zoeken)
+            navigationInstructionsInitiallyVisible: false,  // Verbergt de navigatie-instructies
+            //clockViewModel: false,         // Verbergt de klok viewmodel (play/pause knoppen)
+            animation: false,              // Verbergt de animatie knop
+        });
+
+        // Enable rendering the sky
+        viewer.scene.skyAtmosphere.show = true;
+
+        viewer.camera.setView({
+            destination: Cesium.Cartesian3.fromDegrees(5.56455, 52.04310, 60), // Jouw locatie met hoogte 150 meter
+            orientation: {
+                heading: Cesium.Math.toRadians(230),  // Kijk in oostelijke richting (90 graden)
+                pitch: Cesium.Math.toRadians(-20),  // Lichte neerwaartse helling (pitch)
+                roll: 0,                            // Geen rotatie (roll)
+            }
+        });
+
+        viewer.camera.moveBackward(120);
+
+        // Configure Ambient Occlusion
+        if (Cesium.PostProcessStageLibrary.isAmbientOcclusionSupported(viewer.scene)) {
+            const ambientOcclusion = viewer.scene.postProcessStages.ambientOcclusion;
+            ambientOcclusion.enabled = true;
+            ambientOcclusion.uniforms.intensity = 2.0;
+            ambientOcclusion.uniforms.bias = 0.1;
+            ambientOcclusion.uniforms.lengthCap = 0.5;
+            ambientOcclusion.uniforms.directionCount = 16;
+            ambientOcclusion.uniforms.stepCount = 32;
+        }
+
+        try {
+            // 3D Tileset toevoegen (vervang door je eigen ID als je een ander tileset wilt gebruiken)
+            const googleTileset = await Cesium.Cesium3DTileset.fromIonAssetId(2275207);
+            viewer.scene.primitives.add(googleTileset);
+        } catch (error) {
+            console.error('Fout bij het laden van de tileset:', error);
+        }
+
+        const position = Cesium.Cartesian3.fromDegrees(5.56455, 52.04310, 50.5);
+        const heading = Cesium.Math.toRadians(96);
+        const pitch = Cesium.Math.toRadians(0);
+        const roll = Cesium.Math.toRadians(0);
+        const hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+        const orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+
+        viewer.entities.add({
+            name: "2023-074",
+            position: position,
+            orientation: orientation,
+            model: {
+                uri: "https://tripledesign.nl/content/portfolio/ar-voor-gebouwen/2023-074.glb",
+                scale: 1,
+            }
+        });
+    }
+
+    // De async functie aanroepen
+    initializeViewer();
+</script>
+-->
+
+<script>
+    // Filter functie
+    document.querySelectorAll('.filter-button').forEach(button => {
+        button.addEventListener('click', () => {
+            const filter = button.getAttribute('data-filter');
+            document.querySelectorAll('.case-item').forEach(item => {
+                if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+    });
+
+    (function () {
+        const carousels = document.querySelectorAll('.carousel');
+        carousels.forEach(carousel => {
+            const bootstrapCarousel = new bootstrap.Carousel(carousel, {
+                interval: 3000,
+                ride: 'carousel'
+            });
+
+            const buttons = carousel.closest('.card').querySelectorAll('.btn-group button');
+
+            // Luister naar het 'slide' event van de carousel
+            carousel.addEventListener('slide.bs.carousel', function (event) {
+                buttons.forEach(button => {
+                    button.classList.remove('active-button');
+                });
+
+                const activeIndex = event.to;
+                if (buttons[activeIndex]) {
+                    buttons[activeIndex].classList.add('active-button');
+                }
+            });
+
+            // Activeer de eerste knop bij het starten van de carousel
+            if (buttons.length > 0) {
+                buttons[0].classList.add('active-button');
+            }
+        });
+    })();
+
+    function portfolioCesium() {
+        var cesiumContainer = document.getElementById("cesiumContainer");
+        if (cesiumContainer) {
+            cesiumContainer.style.display = "block"; // Zorgt ervoor dat de container zichtbaar wordt
+        } else {
+            console.error("Cesium-container niet gevonden!");
+        }
+
+        if (!cesiumContainer) {
+            console.error("CesiumContainer niet gevonden!");
+            return;
+        }
+
+        // Maak een wrapper div om de originele plek van Cesium te bewaren
+        const placeholder = document.createElement("div");
+        placeholder.id = "cesium-placeholder";
+        cesiumContainer.parentNode.insertBefore(placeholder, cesiumContainer);
+
+        // Modal HTML
+        const modalHtml = `
+        <style>
+            .modal-body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                overflow: hidden;
+                background: black;
+            }
+            #modal-cesium-container {
+                width: 100%;
+                height: 100%;
+            }
+        </style>
+        <div class="modal fade" id="cesium-modal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen p-0 p-md-3 m-0">
+                <div class="modal-content bg-white shadow">
+                    <div class="modal-body m-0 p-0 overflow-hidden">
+                        <div class="position-absolute top-0 z-3 m-0 p-0 ${/iPhone|Android/i.test(navigator.userAgent) ? 'start-0' : 'end-0'}">
+                            <button class="rounded-0" type="button" 
+                                    style="width: 100px; height: 100px; background-color: #fff; color: #000; font-size: 60px; border: 1px solid #fff;" 
+                                    data-bs-dismiss="modal" aria-label="Close">
+                                <i class="${/iPhone|Android/i.test(navigator.userAgent) ? 'bi-chevron-left' : 'bi-x'}"></i>
+                            </button>
+                        </div>
+                        <div id="modal-cesium-container"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `;
+
+        // Voeg modal toe aan body
+        document.body.insertAdjacentHTML('beforeend', modalHtml);
+
+        // Verplaats CesiumContainer naar modal
+        document.getElementById("modal-cesium-container").appendChild(cesiumContainer);
+
+        // Open de modal
+        const cesiumModal = new bootstrap.Modal(document.getElementById('cesium-modal'), {
+            backdrop: 'static',
+            keyboard: false,
+            focus: true
+        });
+        cesiumModal.show();
+
+        // Wanneer de modal sluit, verplaats de CesiumContainer terug
+        const modalElement = document.getElementById('cesium-modal');
+        modalElement.addEventListener('hidden.bs.modal', function () {
+            placeholder.parentNode.replaceChild(cesiumContainer, placeholder); // Zet het terug op originele plek
+            modalElement.remove(); // Verwijder modal uit DOM
+        });
+    }
+
+
+    // Functie voor het tonen van een video in een modal
+    function portfolioVideo(srcUrl) {
+        const modalHtml = `
+        <style>
+            .modal-body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                overflow: hidden;
+            }
+            #video-src {
+                width: 100%;
+                max-height: 100%;
+                display: block;
+                margin: auto;
+            }
+        </style>
+        <div class="modal fade" id="video-modal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen p-0 p-md-3 m-0">
+                <div class="modal-content bg-white shadow">
+                    <div class="modal-body m-0 p-0 overflow-hidden">
+                        <div class="position-absolute top-0 z-3 m-0 p-0 ${/iPhone|Android/i.test(navigator.userAgent) ? 'start-0' : 'end-0'}">
+                            <button class="rounded-0 " type="button" style="width: 100px; height: 100px; background-color: #fff; color: #000; font-size: 60px; border: 1px solid #fff;" 
+                                    class="btn btn-link text-decoration-none m-0 p-0 ${/iPhone|Android/i.test(navigator.userAgent) ? 'ms-3 mt-3' : 'me-4 mt-4'}" 
+                                    data-bs-dismiss="modal" aria-label="Close">
+                                <i class="${/iPhone|Android/i.test(navigator.userAgent) ? 'bi-chevron-left' : 'bi-x'}"></i>
+                            </button>
+                        </div>
+                        <video id="video-src" class="object-fit-contain" muted autoplay controls></video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `;
+
+        // Voeg modal toe aan het body-element
+        document.body.insertAdjacentHTML('beforeend', modalHtml);
+
+        // Stel de video-bron in
+        const videoSrc = document.getElementById("video-src");
+        videoSrc.src = srcUrl;
+
+        // Toon de modal
+        const videoModal = new bootstrap.Modal(document.getElementById('video-modal'), {
+            backdrop: 'static',
+            keyboard: false,
+            focus: true
+        });
+        videoModal.show();
+
+        // Sluit de modal en verwijder het uit de DOM na het sluiten
+        const modalElement = document.getElementById('video-modal');
+        modalElement.addEventListener('hidden.bs.modal', function () {
+            cesiumContainer.style.display = "none"; // Verberg de Cesium-container
+            modalElement.remove(); // Verwijder modal uit DOM
+        });
+    }
+</script>

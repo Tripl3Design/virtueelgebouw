@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="nl">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="The TripleTise configurator is a bespoke realtime 3D webGL tool that enables countless variations of a product and immediately shows the correct prices.">
+  <meta name="keywords"
+    content="VirtueelGebouw">
+  <meta name="author" content="Boudewijn Bakker">
+
+  <meta property="og:url" content="https://virtueelgebouw.web.app">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="VirtueelGebouw">
+  <meta property="og:description"
+    content="Ontdek VirtueelGebouw, uw partner in webbased 3D-oplossingen. Van 3D-visualisaties tot virtual reality, wij helpen uw ideeën tot leven te brengen.">
+  <meta property="og:image" content="https://virtueelgebouw.nl/content/portfolio/megaplex-woningen/slaapkamer.jpg">
+  <meta property="og:logo" content="https://virtueelgebouw.nl/img/logo/logo_TD_def.png">
+
+  <link rel="icon" type="image/svg+xml" href="favicon.ico">
+
+  <title>VirtueelGebouw</title>
+
+  <link href="https://fonts.cdnfonts.com/css/alte-haas-grotesk" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/share-tech-mono" rel="stylesheet">
+  <style>
+    @import url('https://fonts.cdnfonts.com/css/alte-haas-grotesk');
+    @import url('https://fonts.cdnfonts.com/css/share-tech-mono');
+  </style>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/virtueelgebouw.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/gh/Tripl3Design/tripletise@latest/tripletiseModal.css" rel="stylesheet">
+
+  <!-- markedown -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/4.0.0/github-markdown.min.css"
+    rel="stylesheet">
+  <link href="css/virtueelgebouw-markdown.css" rel="stylesheet">
+
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js";
+    import { getFirestore, collection, addDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyAQ4yjYm1QxaXoINzUykSzvXv4SwdhIY4w",
+      authDomain: "virtueelgebouw.firebaseapp.com",
+      projectId: "virtueelgebouw",
+      storageBucket: "virtueelgebouw.firebasestorage.app",
+      messagingSenderId: "661780005711",
+      appId: "1:661780005711:web:0e7e25a802fadff910bb3a"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+    window.db = db;
+    window.collection = collection;
+    window.addDoc = addDoc;
+    window.serverTimestamp = serverTimestamp;
+  </script>
+
+  <!--
+CESIUM
+<script src="https://cesium.com/downloads/cesiumjs/releases/1.125/Build/Cesium/Cesium.js"></script>
+<link href="https://cesium.com/downloads/cesiumjs/releases/1.125/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
+-->
+</head>
+
+<body id="body" class="bg-light">
+  <div class="container p-3 pb-0">
+    <img src="img/logo/logo_TD_def.png" alt="VirtueelGebouw" height="60">
+  </div>
+
+  <div class="container-fluid sticky-top p-0 pt-3">
+    <nav
+      class="navbar navbar-expand-lg bg-black border border-start-0 border-end-0 border-3 border-light shadow p-0 py-3"
+      data-bs-theme="dark">
+      <div class="container d-flex align-content-end flex-wrap p-0 px-3">
+        <button id="plan-een-demo" type="button"
+          class="btn btn-lg btn-danger rounded-0 fw-bold fs-6 text-uppercase text-light justify-content-end order-lg-1 m-0 px-3 py-2"
+          onclick="handleLinkClick('plan-een-demo')">
+          <span class="text-black">
+            <i class="bi-calendar-plus"></i>&nbsp;&nbsp;Plan een demo
+          </span>
+        </button>
+        <div class="navbar-toggler m-0 p-0">
+          <button type="button"
+            class="btn btn-lg btn-light rounded-0 fw-bold fs-6 text-black text-uppercase justify-content-end order-lg-1 m-0 px-3 py-2"
+            data-bs-toggle="collapse" data-bs-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="text-black">
+              <i class="bi-list"></i>&nbsp;&nbsp;Menu
+            </span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarToggle">
+          <ul class="navbar-nav justify-content-start">
+            <li class="nav-item pe-2">
+              <a class="nav-link fw-bold fs-6 text-light text-uppercase" data-id="home" href="/home"
+                onclick="handleLinkClick('home')">Home</a>
+            </li>
+            <!--
+            <li class="nav-item pe-2">
+                <a class="nav-link fw-bold fs-6 text-light text-uppercase" data-id="contact" href="/contact"
+                    onclick="handleLinkClick('contact')">Contact</a>
+            </li>
+            -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <div id="contentContainer" class="m-0 p-0"></div>
+
+  <div class="container mx-auto pb-1 pb-md-3 p-0 m-0">
+    <div class="row bg-black text-light shadow p-0 m-3">
+      <div class="row p-0 m-0">
+        <div class="col-md-6 col-lg-3 m-0 p-3">
+          <div class="py-2 mb-2">
+            <a href="#" onclick="handleLinkClick('home')">
+              <img src="img/logo/tripledesign_wit.svg" alt="VirtueelGebouw" height="40">
+            </a>
+          </div>
+          <h3>Citadel 24-II</h3>
+          <h3>3905 NK Veenendaal</h3>
+        </div>
+        <div class="col-md-6 col-lg-3     m-0 p-3">
+          <h2 class="pb-2">Links</h2>
+          <h3>
+            <a class="link-light link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+              href="/home" onclick="handleLinkClick('home')">Home</a>
+          </h3>
+
+          <div class="col-md-6 col-lg-3  text-light m-0 p-3">
+            <h2 class="pb-2">Contact</h2>
+            <h3>
+              <a class="link-light link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                href="tel:+31621250253">06 21250253</a>
+            </h3>
+            <h3>
+              <a class="link-light link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                href="mailto:info@virtueelgebouw.web.app">info@virtueelgebouw.web.app</a>
+            </h3>
+            <h3>
+              <a class="link-light link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                href="https://www.linkedin.com/company/tripledesign">LinkedIn</a>
+            </h3>
+            <div>
+              <button type="button" onclick="handleLinkClick('contact')" href="/contact"
+                class="btn btn-light rounded-0 fs-6 fw-bold text-uppercase mt-3">Contact</button>
+            </div>
+            <div>
+              <button type="button" onclick="handleLinkClick('plan-een-demo')" href="/plan-een-demo"
+                class="btn btn-danger text-black rounded-0 fs-6 fw-bold text-uppercase mt-3">Plan een
+                demo</button>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3  m-0 p-3">
+            <h4>KvK: 76554597</h4>
+            <h4>BTW: NL0033800647</h4>
+            <h4>
+              <a class="link-light link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                href="pdf/Algemene-Voorwaarden-TripleTise-productconfigurator.pdf">
+                Algemene Voorwaarden&nbsp;&nbsp;<i class="bi-download"></i></a>
+            </h4>
+            <h4>&copy; <span id="currentYear"></span> VirtueelGebouw</h4>
+            <h4>
+              <a class="link-light link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                href="https://tripletise.web.app/sitemap.xml">sitemap</a>
+            </h4>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/typewriter.js"></script>
+    <script>
+      let isLoading = false;
+
+      function loadContent(page) {
+        if (isLoading) return; // Voorkom dubbele aanroepen
+        isLoading = true;
+
+        const url = page + ".html";
+
+        fetch(url)
+          .then(response => {
+            if (!response.ok) {
+              throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            return response.text();
+          })
+          .then(data => {
+            const contentContainer = document.getElementById('contentContainer');
+            if (contentContainer) {
+              contentContainer.innerHTML = data;
+              updateMetadata();
+              initializeTypewriter();
+              executeScripts(contentContainer);
+            } else {
+              console.error('Content container not found!');
+            }
+          })
+          .catch(error => {
+            console.error('Error loading content: ', error);
+            document.getElementById('contentContainer').innerHTML = '<p>Error loading content. Please try again later.</p>';
+          })
+          .finally(() => {
+            isLoading = false; // Zet isLoading weer op false na het laden
+          });
+      }
+
+      function updateMetadata() {
+        const metadataScript = document.getElementById('page-metadata');
+        if (metadataScript) {
+          const metadata = JSON.parse(metadataScript.textContent);
+
+          // Update title
+          if (metadata.title) {
+            document.title = metadata.title;
+          }
+
+          // Update meta description
+          if (metadata.description) {
+            let metaDescription = document.querySelector('meta[name="description"]');
+            if (!metaDescription) {
+              metaDescription = document.createElement('meta');
+              metaDescription.name = "description";
+              document.head.appendChild(metaDescription);
+            }
+            metaDescription.content = metadata.description;
+          }
+        }
+      }
+
+      // Function to reset link colors and highlight the active link
+      function resetLinkColors() {
+        const links = document.querySelectorAll('a[data-id]');
+        links.forEach(link => {
+          link.classList.remove('text-warning');
+          link.classList.add('text-light');
+        });
+      }
+
+      function handleLinkClick(id) {
+        event.preventDefault();
+        resetLinkColors();
+        const link = document.querySelector(`a[data-id="${id}"]`);
+        if (link) {
+          link.classList.remove('text-light');
+          link.classList.add('text-warning');
+        }
+        loadContent(id);
+        history.pushState(null, '', '/' + id);
+      }
+
+      function handleInitialLoad() {
+        const path = window.location.pathname.substring(1);
+        if (path) {
+          loadContent(path);
+          const linkElement = document.querySelector(`a[data-id="${path}"]`);
+          if (linkElement) {
+            linkElement.classList.remove('text-light');
+            linkElement.classList.add('text-warning');
+          }
+        } else {
+          loadContent('home');
+          const homeLink = document.querySelector(`a[data-id="home"]`);
+          if (homeLink) {
+            homeLink.classList.remove('text-light');
+            homeLink.classList.add('text-warning');
+          }
+        }
+      }
+
+      function executeScripts(container) {
+        const scripts = container.querySelectorAll('script');
+        scripts.forEach(oldScript => {
+          try {
+            // Controleer of het geen JSON-script is
+            if (oldScript.type === 'application/json') {
+              return;
+            }
+
+            const newScript = document.createElement('script');
+            if (oldScript.src) {
+              newScript.src = oldScript.src;
+            } else {
+              newScript.textContent = oldScript.textContent;
+            }
+            document.head.appendChild(newScript);
+          } catch (error) {
+            console.error('Error executing script:', error);
+          }
+        });
+      }
+
+      function initializeTypewriter() {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i = 0; i < elements.length; i++) {
+          var toRotate = elements[i].getAttribute('data-type');
+          var period = elements[i].getAttribute('data-period');
+          var highlightWords = elements[i].getAttribute('data-highlight-words');
+          if (toRotate) {
+            new TxtType(elements[i], JSON.parse(toRotate), period, highlightWords ? JSON.parse(highlightWords) : []);
+          }
+        }
+      }
+
+      window.onload = handleInitialLoad;
+      window.onpopstate = handleInitialLoad;
+
+      document.addEventListener('DOMContentLoaded', (event) => {
+        const currentYearElement = document.getElementById('currentYear');
+        const currentYear = new Date().getFullYear();
+        currentYearElement.textContent = currentYear;
+      });
+
+      document.addEventListener('DOMContentLoaded', function () {
+        var navLinks = document.querySelectorAll('.navbar-collapse .nav-link');
+        var navbarCollapse = document.querySelector('.navbar-collapse');
+
+        navLinks.forEach(function (link) {
+          link.addEventListener('click', function () {
+            if (navbarCollapse.classList.contains('show')) {
+              var bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+                toggle: true
+              });
+            }
+          });
+        });
+      });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/gh/Tripl3Design/tripletise@latest/tripletiseModal.js"></script>
+</body>
+
+</html>

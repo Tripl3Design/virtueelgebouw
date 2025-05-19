@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <Placemark>
+      <name>Mijn 3D Gebouw</name>
+      <description>Een gedetailleerd 3D model van een gebouw</description>
+      <Model>
+        <altitudeMode>clampToGround</altitudeMode>
+        <Location>
+          <longitude>5.56421522902635</longitude>
+          <latitude>52.043026037779555</latitude>
+          <altitude>100</altitude>
+        </Location>
+        <Link>
+          <href>https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/Avocado/glTF/Avocado.gltf</href>
+          <refreshMode>onInterval</refreshMode>
+          <refreshInterval>1</refreshInterval>
+        </Link>
+        <Scale>
+          <x>600</x>
+          <y>600</y>
+          <z>600</z>
+        </Scale>
+        <Orientation>
+          <heading>0</heading>
+          <tilt>0</tilt>
+          <roll>0</roll>
+        </Orientation>
+      </Model>
+    </Placemark>
+  </Document>
+</kml>

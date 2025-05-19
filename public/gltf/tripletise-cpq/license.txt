@@ -1,0 +1,11 @@
+Model Information:
+* title:	Terminal Sofa - Couch
+* source:	https://sketchfab.com/3d-models/terminal-sofa-couch-89fd762e052a4fcf9d4dadd73bcdd55b
+* author:	JohnnyP (https://sketchfab.com/johnnyp)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Terminal Sofa - Couch" (https://sketchfab.com/3d-models/terminal-sofa-couch-89fd762e052a4fcf9d4dadd73bcdd55b) by JohnnyP (https://sketchfab.com/johnnyp) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

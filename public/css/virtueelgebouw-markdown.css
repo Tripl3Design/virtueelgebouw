@@ -1,0 +1,132 @@
+        .markdown-body {
+            color: #e1e4e8;
+        }
+
+        .markdown-body pre,
+        .markdown-body code {
+            color: #000;
+            /* Stel hier je gewenste kleur in */
+        }
+
+        /* Optioneel: Verander de achtergrondkleur van codeblokken */
+        .markdown-body pre {
+            color: #dcdcdc;
+            /* Lichte tekstkleur voor codeblokken */
+            background-color: #2d2d2d;
+            /* Donkere achtergrond voor codeblokken */
+            padding: 12px;
+            border-radius: 6px;
+            overflow: auto;
+            font-size: 14px;
+        }
+
+        /* Voor inline code binnen tekst */
+        .markdown-body code {
+            color: #f8f8f2;
+            /* Lichte tekstkleur voor inline code */
+            background-color: #2d2d2d;
+            /* Donkere achtergrond voor inline code */
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .markdown-body script {
+            color: #f8f8f2;
+            /* Lichte tekstkleur voor inhoud in script tags */
+            background-color: #2d2d2d;
+            /* Donkere achtergrondkleur voor script inhoud */
+            padding: 6px;
+            border-radius: 4px;
+            font-size: 14px;
+            display: block;
+            /* Zorg ervoor dat de inhoud als een blok wordt weergegeven */
+        }
+
+        /* Optioneel: Markeren van syntax voor code (indien gewenst) */
+        .markdown-body pre code {
+            background-color: transparent;
+            /* Achtergrond van inline codeblokken transparant in pre */
+        }
+
+        /* Geef een subtiele blauwe kleur voor syntaxis van links en knoppen */
+        .markdown-body a {
+            color: #58a6ff;
+            /* GitHub blauwe kleur voor links */
+        }
+
+        /* Verander de kleur van de lijn onder kopjes in Markdown */
+        .markdown-body h1,
+        .markdown-body h2,
+        .markdown-body h3,
+        .markdown-body h4,
+        .markdown-body h5,
+        .markdown-body h6 {
+            border-bottom: 2px solid #000;
+            /* Zwarte lijn onder kopjes */
+            padding-bottom: 10px;
+            /* Ruimte tussen tekst en lijn */
+            margin-bottom: 15px;
+            /* Ruimte onder het kopje */
+        }
+
+
+
+        /* Stijlen voor tabellen */
+        .markdown-body table {
+            width: 100%;
+            margin: 20px 0;
+            border-collapse: collapse;
+        }
+
+        /* Achtergrondkleur en randkleur van tabelcellen */
+        .markdown-body table th,
+        .markdown-body table td {
+            padding: 8px;
+            border: 1px solid #444;
+            /* Donkere randkleur voor tabelcellen */
+        }
+
+        /* Aangepaste achtergrondkleur voor de header van de tabel */
+        .markdown-body table th {
+            background-color: #333;
+            /* Donkere achtergrond voor de header */
+            color: #f8f8f2;
+            /* Lichte tekstkleur voor de header */
+            font-weight: bold;
+        }
+
+        /* Aangepaste achtergrondkleur voor even en oneven rijen */
+        .markdown-body table tr:nth-child(even) {
+            background-color: #2d2d2d;
+            /* Donkere achtergrond voor even rijen */
+        }
+
+        .markdown-body table tr:nth-child(odd) {
+            background-color: #242424;
+            /* Nog donkerder voor oneven rijen */
+        }
+
+        /* Hover-effect voor rijen (lichte achtergrondkleur bij hover) */
+        .markdown-body table tr:hover {
+            background-color: #444;
+            /* Lichtere achtergrondkleur bij hover */
+        }
+
+        /* Optioneel: Verhoog de zichtbaarheid van links in tabellen */
+        .markdown-body table a {
+            color: #58a6ff;
+            /* GitHub blauwe kleur voor links in tabellen */
+        }
+
+        /* Markeren van syntax voor code (indien gewenst) */
+        .markdown-body pre code {
+            background-color: transparent;
+            /* Achtergrond van inline codeblokken transparant in pre */
+        }
+
+        /* Geef een subtiele blauwe kleur voor syntaxis van links en knoppen */
+        .markdown-body a {
+            color: #58a6ff;
+            /* GitHub blauwe kleur voor links */
+        }
